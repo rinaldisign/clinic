@@ -26,22 +26,22 @@
 const scenes = [
   {
     id: "scene1",
-    title: "Ruang Konsultasi",
+    title: "診察室",
     panorama: "assets/panorama1.jpg",
     dot: { x: 33.7, y: 77.0 },
     yawOffset: 0,
     hotspots: [
-      { pitch: -20, yaw: 340, target: "scene2", text: "Ruang Periksa" },
+      { pitch: -20, yaw: 340, target: "scene2", text: "患者室" },
     ],
   },
   {
     id: "scene2",
-    title: "Ruang Periksa",
+    title: "患者室",
     panorama: "assets/panorama2.jpg",
     dot: { x: 75.2, y: 38.3 },
     yawOffset: 0,
     hotspots: [
-      { pitch: -20, yaw: 20, target: "scene1", text: "Ruang Konsultasi" },
+      { pitch: -20, yaw: 23, target: "scene1", text: "診察室" },
     ],
   },
 ];
