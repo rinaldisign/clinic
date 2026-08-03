@@ -31,7 +31,7 @@ const scenes = [
     dot: { x: 33.7, y: 77.0 },
     yawOffset: 0,
     hotspots: [
-      { pitch: -35, yaw: 340, target: "scene2", text: "患者室" },
+      { pitch: -25, yaw: 350, target: "scene2", text: "患者室" },
     ],
   },
   {
@@ -41,7 +41,7 @@ const scenes = [
     dot: { x: 75.2, y: 38.3 },
     yawOffset: 0,
     hotspots: [
-      { pitch: -20, yaw: 23, target: "scene1", text: "診察室" },
+      { pitch: -20, yaw: 21, target: "scene1", text: "診察室" },
     ],
   },
 ];
