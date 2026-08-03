@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Ruang Konsultasi — Tur Virtual 360°</title>
+<meta name="description" content="Tur virtual 360° interaktif dengan denah navigasi." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="lib/pannellum.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <div id="panorama" role="application" aria-label="Panorama 360 derajat, seret untuk melihat sekeliling"></div>
+
+  <div id="loading-screen">
+    <div class="loading-ring" aria-hidden="true"></div>
+    <p>Memuat panorama…</p>
+  </div>
+
+  <header class="hud-top">
+    <p class="eyebrow">Tur Virtual · 360°</p>
+    <h1 id="scene-title">Ruang Konsultasi</h1>
+  </header>
+
+  <button id="fullscreen-btn" class="control-btn" aria-label="Layar penuh" title="Layar penuh">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/>
+    </svg>
+  </button>
+
+  <div class="nav-panel">
+    <div class="compass" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="compass-dial" id="compass-dial">
+        <circle cx="50" cy="50" r="46" class="compass-ring" />
+        <g class="compass-ticks">
+          <line x1="50" y1="6" x2="50" y2="12"/>
+          <line x1="50" y1="88" x2="50" y2="94"/>
+          <line x1="6" y1="50" x2="12" y2="50"/>
+          <line x1="88" y1="50" x2="94" y2="50"/>
+        </g>
+        <path d="M50 16 L56 50 L50 84 L44 50 Z" class="compass-fov" id="compass-fov" />
+        <circle cx="50" cy="50" r="3.5" class="compass-center" />
+      </svg>
+      <span class="compass-label">U</span>
+    </div>
+
+    <div class="floorplan-panel">
+      <p class="floorplan-title">Denah</p>
+      <div class="floorplan-wrap" id="floorplan-wrap">
+        <img src="assets/floorplan.jpg" alt="Denah ruangan dengan titik pandang" draggable="false" />
+        <!-- viewpoint dots are injected by js/app.js from the scenes list -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="lib/pannellum.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
