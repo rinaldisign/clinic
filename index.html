@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Ruang Konsultasi — Tur Virtual 360°</title>
-<meta name="description" content="Tur virtual 360° interaktif dengan denah navigasi." />
+<title>診察室 - 360°バーチャルツアー demo</title>
+<meta name="description" content="診察室 - 360°バーチャルツアー demo." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +21,15 @@
 
   <div id="loading-screen">
     <div class="loading-ring" aria-hidden="true"></div>
-    <p>Memuat panorama…</p>
+    <p>パノラマを読み込み中…</p>
   </div>
 
   <header class="hud-top">
-    <p class="eyebrow">Tur Virtual · 360°</p>
-    <h1 id="scene-title">Ruang Konsultasi</h1>
+    <p class="eyebrow">バーチャルツアー · 360°</p>
+    <h1 id="scene-title">診察室</h1>
   </header>
 
-  <button id="fullscreen-btn" class="control-btn" aria-label="Layar penuh" title="Layar penuh">
+  <button id="fullscreen-btn" class="control-btn" aria-label="全画面" title="全画面">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/>
     </svg>
@@ -52,7 +52,7 @@
     </div>
 
     <div class="floorplan-panel">
-      <p class="floorplan-title">Denah</p>
+      <p class="floorplan-title">平面図</p>
       <div class="floorplan-wrap" id="floorplan-wrap">
         <img src="assets/floorplan.jpg" alt="Denah ruangan dengan titik pandang" draggable="false" />
         <!-- viewpoint dots are injected by js/app.js from the scenes list -->
